@@ -1,0 +1,168 @@
+
+<html lang="en">
+<head>
+<style>
+*{
+	margin: 0;
+	padding: 0;
+}
+.wrapper{
+	width: 1170px;
+	margin:auto;
+}
+header{
+	background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("bmwimage.jpg");
+	height: 100vh;
+	-webkit-baclground-size:cover;
+	background-size:cover;
+	background-position:center center;
+	position: relative;
+}
+.nav-area{
+	float: right;
+	list-style: none;
+	margin-top: 30px;
+	
+}
+
+.nav-area li{
+	display: inline-block;
+	font-size: 100px;
+}
+.nav-area li a{
+	color: #fff;
+	text-decoration: none;
+	padding: 15px 20px;
+	font-family:poppins;
+	font-size: 14px;
+}
+.nav-area li a:hover{
+	background: #fff;
+	color: #333;
+	hover ul {display: block;}
+}
+.dropdown{
+  position: absolute;
+  width: 200px;
+  display: none;
+  
+}
+.dropdown hover li{
+display: block;
+}
+
+.logo img{
+	width:100px;
+	float: left;
+	height:auto;
+
+}
+.welcome-text{
+	position: absolute;
+	width: 600px;
+	height: 300px;
+	margin: 20% 30%;
+	text-align: center;
+	}
+.welcome-text h1{
+	text-align:center;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 60px;
+}
+.welcome-text a{
+	border: 1px solid #fff;
+	padding: 10px 25px;
+	text-decoration: none;
+	text-transformation: uppercase;
+	font-size: 14px;
+	margin-top: 20px;
+	display: inline-block;
+	color: #fff;
+}
+.welcome-text a:hover{
+	background: #fff;
+	color: #333;
+}
+.dropbtn {
+  color: #fff;
+  background-color: Transparent;
+  border :none;
+  padding: 6px 20px;
+	font-family:poppins;
+	font-size: 200%;
+}
+
+.dropdown {
+  left : 33%;
+  bottom : 5;
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 58%;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #fff;
+  color : #333;
+}
+		
+</style>
+
+	<meta character="UTF-8">
+	<title>Home Page</title>
+	
+</head>
+<body>
+	<header>
+		<div class="wrapper">
+				<div class="logo">
+				<img src="BMW-logo.png" alt="">
+		        </div>
+		<ul class="nav-area">
+		
+		<li><a href="#"><font size="6">Home</font></a></li>
+		<li><a href="/./ACSMS/pics/search1.php"><font size="6">Portfolio</font></a></li>
+		<li><a href="contact.html"><font size="6">Enquiry</font></a></li>
+		<li><a href="aboutus.html"><font size="6">About Us</font></a></li>
+		
+		</ul>
+		</div>
+		<div class="nav-area">
+		<div class="dropdown">
+  <button class="dropbtn">Login</button>
+  <div class="dropdown-content">
+  <a href="login/login.php">Customer</a>
+  <a href="login/admlogin.php">Admin</a>
+  </div>
+  </div>
+</div>
+
+		<div class="welcome-text">
+		<h1>We are BMW<h1>
+		<a href="contact.html">Contact Us</a>
+		</div>
+		
+	</header>
+</body>
+</html>
